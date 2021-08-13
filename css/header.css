@@ -1,0 +1,6 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* alinea los elementos en el eje principal
+                                     El primer item al inicio, el último al final*/
+  align-items: center; /* alinea en el eje transversal */
+}

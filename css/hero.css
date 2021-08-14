@@ -2,23 +2,23 @@
   padding-block-start: 16px;
 }
 
-.hero-image {
-  text-align: center;
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .hero-social {
   padding-block-end: 24px;
 }
 
-.hero h1 {
-  font: var(--headLine3)
-  margin: 0;
+.hero-image {
+  text-align: center;
 }
 
-.hero-description {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.hero h1 {
+  font: var(--headLine3);
+  margin: 0;
 }
 
 /* selecciona uno o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos

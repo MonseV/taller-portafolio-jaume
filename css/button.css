@@ -9,10 +9,12 @@
   border-radius: 4px;
   text-transform: uppercase;
   border:none;
+  text-decoration: none;
+  text-align: center;
 }
 
 .button.is-secondary{
   background: unset; /* sin fondo */
-  color: var(--purple);
+  color: var(--purplee);
   border: 2px solid var(--purple);
 }

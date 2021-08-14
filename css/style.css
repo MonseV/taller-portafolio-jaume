@@ -1,6 +1,7 @@
 @import "./button.css";
 @import "./button-icon.css";
 @import "./header.css";
+@import "./hero.css";
 
 :root {
   --fontBase: 'Poppins', sans-serif;
@@ -23,5 +24,5 @@ body {
   background: var(--gradient);
   min-block-size: 100vh; /* define el tamaño mínimo horizontal o vertical de un elemento por si crece */
   font: var(--body1);
-  color: var(--green);
+  color: var(--purple);
 }

@@ -28,3 +28,28 @@ En este caso seleccionamos el primer span */
   font: var(--headLine5);
   display: block;
 }
+
+@media screen and (min-width: 768px) { /* aplica para un ancho de 768px o más */
+  .hero {
+    display: flex;
+    gap: 32px; /* espacio entre elementos */
+  }
+
+  .hero-description {
+    order: 1;
+    max-inline-size: 450px;
+  }
+
+  .hero-image {
+    order: 2;
+    flex: 1; /* toma todo el espacio disponible*/
+    text-align: end;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .hero-image img {
+      inline-size: 500px; /*ancho */
+      block-size: 504px; /* alto */
+    }
+  }
+}

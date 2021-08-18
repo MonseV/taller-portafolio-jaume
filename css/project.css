@@ -1,0 +1,52 @@
+.project {
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+}
+
+.project-title {
+  background: var(--purple);
+  align-self: flex-start;
+  color: var(--white);
+  font: var(--headLine5);
+  padding-block-start: 4px;
+  padding-block-end: 4px;
+  padding-inline-end: 8px;
+  padding-inline-start: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* margin-inline-start: 4px; */ /*para que la sombra no se sale del margen */
+  box-shadow: -4px 4px 0 var(--white) /*sombra*/
+}
+
+a[title="LeonidasEsteban.com"] {
+  text-transform: lowercase;
+}
+
+.project-image img {
+  max-inline-size: 100%; /* se adapata al espacio del contenedor*/
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    display: flex;
+    align-items: center;
+    padding-block-start: 80px;
+    padding-block-end: 80px;
+  }
+
+  .project-description{
+    flex: 1;
+  }
+
+  .project:nth-child(odd) .project-image { /* odd -> selector para los elementos impares */
+    order: 2; /* propiedad flex para cambiar el orden */
+    flex: 1; /* espacio restante en el contenedor flexible debe asignarse, en este caso 50% */
+    text-align: center;
+  }
+}

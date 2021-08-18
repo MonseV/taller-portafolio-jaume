@@ -14,6 +14,13 @@
 
 .hero-image {
   text-align: center;
+
+}
+
+/* Para que se adapate al espacio del contenedor y no se deforme la imagen */
+.hero-image img {
+  max-inline-size: 100%;
+  block-size: auto;
 }
 
 .hero h1 {

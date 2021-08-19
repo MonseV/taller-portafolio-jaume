@@ -1,0 +1,41 @@
+.footer {
+  color: var(--white);
+  text-align: center;
+}
+
+.footer-logo {
+  display: none; /* por defecto no se muestra */
+}
+
+.footer .social {
+  justify-content: center;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    display: block;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer .social {
+    order: 3;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-copyright {
+    display:flex;
+    gap: 8px; /* para el espacio entre los 2 p */
+  }
+
+  .footer {
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+  }
+}

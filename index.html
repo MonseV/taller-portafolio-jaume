@@ -13,8 +13,8 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <img src="./images/logo.png" width="70" height="20" alt="logo muy bonito" >
-      <nav class="menu">
+      <img src="./images/logo.png" width="70" height="20" alt="logo muy bonito">
+      <nav class="menu" aria-label="main-navigation">
         <ul>
           <li>
             <a class="is-active" href="#main">Hola</a>
@@ -30,7 +30,7 @@
       <button class="button">Currículum</button>
     </header>
 
-    <section class="hero" id="main">
+    <section aria-label="main" class="hero" id="main">
       <div class="hero-image">
         <img src="./images/jaume.png" width="328" height="330.62" alt="">
       </div>
@@ -42,7 +42,7 @@
         <p>
           Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas.
         </p>
-        <div class="hero-social">
+        <div class="social">
           <a class="button-icon" href="tel:2342463242"><img src="./icons/icon-phone.svg"></a>
           <a class="button-icon" href="mailto:jaume@example.com"><img src="./icons/icon-important_mail.svg"></a>
           <a class="button-icon" href="https://www.instagram.com/jaumeexample/" ><img src="./icons/icon-instagram.svg"></a>
@@ -70,8 +70,7 @@
       </div>
       <div class="project-description">
         <a title="LeonidasEsteban.com" class="project-title" target="_blank" href="https://leonidasesteban.com/">LeonidasEsteban.com</a>
-        <p>Accede a más de 120 proyectos que te ayudarán a mejorar
-        tus habilidades como desarrollador Front-End.</p>
+        <p>Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.</p>
         <a target="_blank" href="https://github.com/jaume/leonidasesteban" class="button is-secondary">Ver código</a>
         <a target="_blank" href="https://leonidasesteban.com/" class="button">Ver proyecto</a>
       </div>
@@ -81,13 +80,13 @@
       <div class="testimony-card">
         <div class="testimony-content">
           <img src="./images/user-leonidas.png">
-          <p>
-            "Jaume ha sido de gran ayuda para acelerar ciertos esfuerzos de desarrollo. Lo que nos hubiera llevado 6 meses solo les
-            llevó 1,5 meses ".
-          </p>
-          <p>
-            Leonidas Esteban / Cofundador y CEO LeonidasEsteban.com
-          </p>
+            <p>
+              "Jaume ha sido de gran ayuda para acelerar ciertos esfuerzos de desarrollo. Lo que nos hubiera llevado 6 meses solo les
+              llevó 1,5 meses ".
+            </p>
+            <p>
+              Leonidas Esteban / Cofundador y CEO LeonidasEsteban.com
+            </p>
         </div>
       </div>
     </section>
@@ -127,28 +126,39 @@
         <a class="project-title" target="_blank" href="https://netnetexample.com">Netnet</a>
         <p>Películas y series ilimitadas y mucho más.
           Disfruta donde quieras. Cancela cuando quieras.</p>
-          <a target="_blank" href="https://github.com/jaume/netnet" class="button is-secondary">Ver código</a>
-          <a target="_blank" href="https://netnetexample.com" class="button">Ver proyecto</a>
-        </div>
+        <a target="_blank" href="https://github.com/jaume/netnet" class="button is-secondary">Ver código</a>
+        <a target="_blank" href="https://netnetexample.com" class="button">Ver proyecto</a>
       </div>
-
-      <section class="testimony">
-        <div class="testimony-card">
-          <div class="testimony-content">
-            <img src="./images/marco-cortez.png">
-            <p>
-              "Por primera vez en la historia de nuestra empresa, aparecimos en todas las plataformas en las que trabajamos".
-            </p>
-            <p>
-              Marco Cortez / Netnet
-            </p>
-          </div>
-        </div>
-      </section>
-
-
     </div>
 
-
+    <section class="testimony">
+      <div class="testimony-card">
+        <div class="testimony-content">
+          <img src="./images/marco-cortez.png">
+          <p>
+            "Por primera vez en la historia de nuestra empresa, aparecimos en todas las plataformas en las que trabajamos".
+          </p>
+          <p>
+            Marco Cortez / Netnet
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="./images/logo.png" width="70" height="20" alt="logo muy bonito">
+      </div>
+      <div class="social">
+        <a class="button-icon" href="tel:2342463242"><img src="./icons/icon-phone.svg"></a>
+        <a class="button-icon" href="mailto:jaume@example.com"><img src="./icons/icon-important_mail.svg"></a>
+        <a class="button-icon" href="https://www.instagram.com/jaumeexample/"><img src="./icons/icon-instagram.svg"></a>
+        <a class="button-icon" href="https://twitter.com/jaumeexample"><img src="./icons/icon-twitter_squared.svg"></a>
+      </div>
+      <div class="footer-copyright">
+        <p>Hecho con ❤️ de Jaume.</p>
+        <p>Copyright 2021 - Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </div>
   </body>
-  </html>
+</html>

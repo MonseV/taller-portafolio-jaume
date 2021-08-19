@@ -7,6 +7,8 @@
 @import "./mesaggePersonal.css";
 @import "./testimony.css";
 @import "./project.css";
+@import "./social.css";
+@import "./footer.css";
 
 :root {
   --fontBase: 'Poppins', sans-serif;
@@ -30,4 +32,5 @@ body {
   min-block-size: 100vh; /* define el tamaño mínimo horizontal o vertical de un elemento por si crece */
   font: var(--body1);
   color: var(--purple);
+  margin: 0;
 }

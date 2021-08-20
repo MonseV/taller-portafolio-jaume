@@ -69,7 +69,7 @@
         <img src="./images/leonidas-esteban.png" alt="">
       </div>
       <div class="project-description">
-        <a title="LeonidasEsteban.com" class="project-title" target="_blank" href="https://leonidasesteban.com/">LeonidasEsteban.com</a>
+        <a title="LeonidasEsteban.com" class="title" target="_blank" href="https://leonidasesteban.com/">LeonidasEsteban.com</a>
         <p>Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.</p>
         <a target="_blank" href="https://github.com/jaume/leonidasesteban" class="button is-secondary">Ver código</a>
         <a target="_blank" href="https://leonidasesteban.com/" class="button">Ver proyecto</a>
@@ -96,7 +96,7 @@
         <img src="./images/marvol.png" alt="">
       </div>
       <div class="project-description">
-        <a class="project-title" target="_blank" href="https://marvolexample.com">Marvol</a>
+        <a class="title" target="_blank" href="https://marvolexample.com">Marvol</a>
         <p>Es el sitio oficial de Marvol Entertainment. Explore películas, personajes, cómics, programas de televisión, videos y
         más oficiales de Marvol.</p>
         <a target="_blank" href="https://github.com/jaume/marvol" class="button is-secondary">Ver código</a>
@@ -123,7 +123,7 @@
         <img src="./images/netnet.png" alt="">
       </div>
       <div class="project-description">
-        <a class="project-title" target="_blank" href="https://netnetexample.com">Netnet</a>
+        <a class="title" target="_blank" href="https://netnetexample.com">Netnet</a>
         <p>Películas y series ilimitadas y mucho más.
           Disfruta donde quieras. Cancela cuando quieras.</p>
         <a target="_blank" href="https://github.com/jaume/netnet" class="button is-secondary">Ver código</a>
@@ -144,21 +144,51 @@
         </div>
       </div>
     </section>
+
+    <form action="" method="POST" class="form">
+      <div class="form-content">
+        <h2 class="title">Hablemos</h2>
+        <p>Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.</p>
+        <!-- hace lo mismo que el atributo for, pero en este caso
+             asocia el input implícitamente anidando el control de formulario dentro de label -->
+        <label for="form-name">
+          Nombre completo
+          <!-- name -> envia la info al servidor
+               required -> especifica que el usuario debe llenarlo antes de enviarlo -->
+          <input required name="name" id="form-name" type="text" placeholder="Juan">
+        </label>
+        <label for="form-email">
+          Correo electrónico
+          <input required name="email" id="form-email" type="email" placeholder="Juan@gmail.com">
+        </label>
+        <label for="form-message">
+          Mensaje
+          <textarea required name="message" placeholder="Mensaje" id="form-message" cols="30" rows="7"></textarea>
+        </label>
+        <!-- submit -> envia el formulario al servidor -->
+        <button class="button" type="submit">Enviar mensaje</button>
+      </div>
+    </form>
+
     <footer class="footer">
-      <div class="footer-logo">
-        <img src="./images/logo.png" width="70" height="20" alt="logo muy bonito">
-      </div>
-      <div class="social">
-        <a class="button-icon" href="tel:2342463242"><img src="./icons/icon-phone.svg"></a>
-        <a class="button-icon" href="mailto:jaume@example.com"><img src="./icons/icon-important_mail.svg"></a>
-        <a class="button-icon" href="https://www.instagram.com/jaumeexample/"><img src="./icons/icon-instagram.svg"></a>
-        <a class="button-icon" href="https://twitter.com/jaumeexample"><img src="./icons/icon-twitter_squared.svg"></a>
-      </div>
-      <div class="footer-copyright">
-        <p>Hecho con ❤️ de Jaume.</p>
-        <p>Copyright 2021 - Todos los derechos reservados.</p>
+      <!-- Margin collapsing -->
+      <div class="footer-content"> <!-- permite mantener el bloque y que no sea flexible -->
+        <div class="footer-logo">
+          <img src="./images/logo.png" width="70" height="20" alt="logo muy bonito">
+        </div>
+        <div class="social">
+          <a class="button-icon" href="tel:2342463242"><img src="./icons/icon-phone.svg"></a>
+          <a class="button-icon" href="mailto:jaume@example.com"><img src="./icons/icon-important_mail.svg"></a>
+          <a class="button-icon" href="https://www.instagram.com/jaumeexample/"><img src="./icons/icon-instagram.svg"></a>
+          <a class="button-icon" href="https://twitter.com/jaumeexample"><img src="./icons/icon-twitter_squared.svg"></a>
+        </div>
+        <div class="footer-copyright">
+          <p>Hecho con ❤️ de Jaume.</p>
+          <p>Copyright 2021 - Todos los derechos reservados.</p>
+        </div>
       </div>
     </footer>
+
   </div>
   </body>
 </html>

@@ -50,9 +50,19 @@ En este caso seleccionamos el primer span */
   }
 
   @media screen and (min-width: 1024px) {
+
+    .hero h1 {
+      font: var(--headLine2);
+      margin: 0;
+    }
+
     .hero-image img {
       inline-size: 500px; /*ancho */
       block-size: 504px; /* alto */
+    }
+
+    .hero-description .button {
+      display: none; /* oculta el enlace */
     }
   }
 }

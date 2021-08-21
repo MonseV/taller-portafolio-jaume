@@ -1,10 +1,13 @@
 .header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px); /* aplicamos el efecto de filtro de desenfoque*/
+}
+
+.header-content {
   display: flex;
   justify-content: space-between; /* alinea los elementos en el eje principal
                                      El primer item al inicio, el último al final*/
   align-items: center; /* alinea en el eje transversal */
   block-size: 80px;
-  position: sticky;
-  top: 0;
-  backdrop-filter: blur(10px); /* aplicamos el efecto de filtro de desenfoque*/
 }

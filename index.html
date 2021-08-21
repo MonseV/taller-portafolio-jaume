@@ -11,24 +11,28 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header-content">
+        <img src="./images/logo.png" width="70" height="20" alt="logo muy bonito">
+        <nav class="menu" aria-label="main-navigation">
+          <ul>
+            <li>
+              <a class="is-active" href="#main">Hola</a>
+            </li>
+            <li>
+              <a href="#project">Proyectos</a>
+            </li>
+            <li>
+              <a href="#contact">Hablemos</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="cv" class="button">Currículum</button>
+      </div>
+    </div>
+  </header>
   <div class="wrapper">
-    <header class="header">
-      <img src="./images/logo.png" width="70" height="20" alt="logo muy bonito">
-      <nav class="menu" aria-label="main-navigation">
-        <ul>
-          <li>
-            <a class="is-active" href="#main">Hola</a>
-          </li>
-          <li>
-            <a href="#project">Proyectos</a>
-          </li>
-          <li>
-            <a href="#contact">Hablemos</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="button">Currículum</button>
-    </header>
 
     <section aria-label="main" class="hero" id="main">
       <div class="hero-image">
@@ -43,12 +47,12 @@
           Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas.
         </p>
         <div class="social">
-          <a class="button-icon" href="tel:2342463242"><img src="./icons/icon-phone.svg"></a>
-          <a class="button-icon" href="mailto:jaume@example.com"><img src="./icons/icon-important_mail.svg"></a>
-          <a class="button-icon" href="https://www.instagram.com/jaumeexample/" ><img src="./icons/icon-instagram.svg"></a>
-          <a class="button-icon" href="https://twitter.com/jaumeexample"><img src="./icons/icon-twitter_squared.svg"></a>
+          <a class="button-icon" target="_blank" href="tel:0000000000"><img src="./icons/icon-phone.svg"></a>
+          <a class="button-icon" target="_blank" href="mailto:jaume@example.com"><img src="./icons/icon-important_mail.svg"></a>
+          <a class="button-icon" target="_blank" href="https://www.instagram.com/jaumeexample/" ><img src="./icons/icon-instagram.svg"></a>
+          <a class="button-icon" target="_blank" href="https://twitter.com/jaumeexample"><img src="./icons/icon-twitter_squared.svg"></a>
         </div>
-        <a href="https://cvjaumeexample.com" class="button">Descargar currículum</a>
+        <a target="_blank" href="https://cvjaumeexample.com" class="button">Descargar currículum</a>
       </div>
     </section>
 
@@ -64,7 +68,7 @@
       </div>
     </section>
 
-    <div class="project">
+    <div id="project" class="project">
       <div class="project-image">
         <img src="./images/leonidas-esteban.png" alt="">
       </div>
@@ -145,9 +149,9 @@
       </div>
     </section>
 
-    <form action="" method="POST" class="form">
+    <form id="formulario" action="" method="POST" class="form">
       <div class="form-content">
-        <h2 class="title">Hablemos</h2>
+        <p class="title">Hablemos</p>
         <p>Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.</p>
         <!-- hace lo mismo que el atributo for, pero en este caso
              asocia el input implícitamente anidando el control de formulario dentro de label -->
@@ -159,7 +163,7 @@
         </label>
         <label for="form-email">
           Correo electrónico
-          <input required name="email" id="form-email" type="email" placeholder="Juan@gmail.com">
+          <input required name="email" id="form-email" type="email" placeholder="juan@gmail.com">
         </label>
         <label for="form-message">
           Mensaje
@@ -169,18 +173,20 @@
         <button class="button" type="submit">Enviar mensaje</button>
       </div>
     </form>
+    <!-- correo donde se enviara la información del formulario -->
+    <a href="mailto:monse.ame@gmail.com" id="dataForm"></a>
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <!-- Margin collapsing -->
       <div class="footer-content"> <!-- permite mantener el bloque y que no sea flexible -->
         <div class="footer-logo">
           <img src="./images/logo.png" width="70" height="20" alt="logo muy bonito">
         </div>
         <div class="social">
-          <a class="button-icon" href="tel:2342463242"><img src="./icons/icon-phone.svg"></a>
-          <a class="button-icon" href="mailto:jaume@example.com"><img src="./icons/icon-important_mail.svg"></a>
-          <a class="button-icon" href="https://www.instagram.com/jaumeexample/"><img src="./icons/icon-instagram.svg"></a>
-          <a class="button-icon" href="https://twitter.com/jaumeexample"><img src="./icons/icon-twitter_squared.svg"></a>
+          <a class="button-icon" target="_blank" href="tel:0000000000"><img src="./icons/icon-phone.svg"></a>
+          <a class="button-icon" target="_blank" href="mailto:jaume@example.com"><img src="./icons/icon-important_mail.svg"></a>
+          <a class="button-icon" target="_blank" href="https://www.instagram.com/jaumeexample/"><img src="./icons/icon-instagram.svg"></a>
+          <a class="button-icon" target="_blank" href="https://twitter.com/jaumeexample"><img src="./icons/icon-twitter_squared.svg"></a>
         </div>
         <div class="footer-copyright">
           <p>Hecho con ❤️ de Jaume.</p>
@@ -188,7 +194,8 @@
         </div>
       </div>
     </footer>
-
   </div>
+
+  <script src="./js/index.js"></script>
   </body>
 </html>

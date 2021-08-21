@@ -8,6 +8,7 @@
 
 .form {
   margin-block-end: 80px;
+  padding-block-start: 40px;
 }
 
 .form .title {
@@ -17,13 +18,13 @@
 .form p {
   color: var(--white);
   margin: 0;
-  text-align: center;
 }
 
 .form label {
   display: flex;
   flex-direction: column;
-  font: var(--button);
+  font: var(--body1);
+  font-weight: 700;
 }
 
 .form input, .form textarea { /* cualquier elemento input o textarea */
@@ -40,6 +41,12 @@
 @media (min-width: 768px) {
   .form .title {
     align-self: stretch;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form p {
     text-align: center;
   }
 }

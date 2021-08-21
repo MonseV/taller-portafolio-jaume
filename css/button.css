@@ -18,3 +18,7 @@
   color: var(--purplee);
   border: 2px solid var(--purple);
 }
+
+.button:hover {
+  cursor: pointer;
+}

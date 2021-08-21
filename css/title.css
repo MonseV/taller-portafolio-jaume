@@ -12,3 +12,9 @@
   /* margin-inline-start: 4px; */ /*para que la sombra no se sale del margen */
   box-shadow: -4px 4px 0 var(--white) /*sombra*/
 }
+
+@media screen and (min-width: 1024px) {
+  .title {
+    font: var(--headLine4);
+  }
+}

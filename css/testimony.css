@@ -1,5 +1,7 @@
-/* .testimony{
-} */
+.testimony{
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+}
 
 .testimony-card {
   border-width: 3.98px;

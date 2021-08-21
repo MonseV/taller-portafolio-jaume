@@ -29,6 +29,10 @@
   --white: white;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--gradient);
   min-block-size: 100vh; /* define el tamaño mínimo horizontal o vertical de un elemento por si crece */
